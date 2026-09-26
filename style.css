@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f6fa;color:#18212b}
+.app{max-width:1100px;margin:auto;padding:20px}
+.topbar{background:linear-gradient(135deg,#0b5ed7,#084298);color:#fff;border-radius:16px;padding:22px;display:flex;justify-content:space-between;gap:15px;align-items:center;box-shadow:0 8px 24px #0002}
+h1{margin:0 0 6px;font-size:28px}.topbar p{margin:0;opacity:.9}
+.info{background:#fff;border-radius:14px;margin:18px 0;padding:16px;display:flex;align-items:center;gap:22px;flex-wrap:wrap;box-shadow:0 3px 12px #00000012}
+.bar{height:9px;background:#e7edf5;border-radius:20px;flex:1;min-width:180px;overflow:hidden}.bar span{display:block;height:100%;width:0;background:#198754;transition:.25s}
+.question{background:#fff;margin:14px 0;padding:20px;border-radius:14px;border:1px solid #e4e9ef;box-shadow:0 2px 8px #0000000b}
+.qtitle{font-weight:700;line-height:1.5;margin-bottom:14px}.qnum{color:#0b5ed7;margin-right:7px}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.option{position:relative;border:1px solid #d6dde6;border-radius:10px;padding:12px 14px;cursor:pointer;background:#fff;transition:.15s}
+.option:hover{border-color:#0b5ed7;background:#f4f8ff}.option input{margin-right:9px}
+.option.disabled{cursor:not-allowed}.option.selected{border-color:#0b5ed7;background:#eaf2ff}
+.option.correct{background:#d1e7dd!important;border-color:#198754!important}.option.wrong{background:#f8d7da!important;border-color:#dc3545!important}
+button{border:0;border-radius:9px;padding:11px 18px;font-weight:700;cursor:pointer}.secondary{background:#fff;color:#084298}.submit{background:#198754;color:#fff;font-size:16px;padding:13px 25px}.submit-area{text-align:center;padding:20px}
+.note{color:#65717e;font-size:13px}.result{background:#fff;border-radius:16px;padding:25px;text-align:center;margin:15px 0;box-shadow:0 4px 15px #0002}.pass{border:3px solid #198754}.fail{border:3px solid #dc3545}
+.score{font-size:38px;font-weight:800}.status{font-size:25px;font-weight:800;margin:8px}.answers{background:#fff;border-radius:14px;padding:20px;margin-bottom:30px}.answer-row{padding:11px;border-bottom:1px solid #e8edf2}.answer-row:last-child{border:0}.green{color:#198754}.red{color:#dc3545}
+.hidden{display:none}
+@media(max-width:700px){.app{padding:10px}.topbar{flex-direction:column;align-items:flex-start}.options{grid-template-columns:1fr}h1{font-size:23px}.info{gap:12px}}

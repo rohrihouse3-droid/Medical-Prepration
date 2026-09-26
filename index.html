@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Paper Practice — 100 MCQs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div>
+      <h1>Medical Paper Practice</h1>
+      <p>100 MCQs • One-time answer selection • New paper on every refresh</p>
+    </div>
+    <button id="newPaperBtn" class="secondary">New Paper</button>
+  </header>
+
+  <section class="info">
+    <div><b>Questions:</b> 100</div>
+    <div><b>Answered:</b> <span id="answered">0</span>/100</div>
+    <div><b>Progress:</b> <span id="progressText">0%</span></div>
+    <div class="bar"><span id="progressBar"></span></div>
+  </section>
+
+  <main id="quiz"></main>
+
+  <section class="submit-area">
+    <button id="submitBtn" class="submit">Submit Paper</button>
+    <p class="note">You can select an answer only once for each question. After submission, correct answers are shown.</p>
+  </section>
+
+  <section id="result" class="result hidden"></section>
+  <div id="answers" class="answers hidden"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
